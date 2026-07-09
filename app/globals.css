@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Blueprint / schematic theme */
+  --background: 209 56% 12%;        /* #0B1D33 deep blueprint navy */
+  --panel: 210 58% 9%;              /* #081525 ink panel */
+  --foreground: 44 33% 93%;         /* #F4F1E9 chalk paper */
+  --muted: 210 30% 20%;
+  --muted-foreground: 205 25% 68%;  /* #9FB3C8 mist */
+  --line: 207 44% 34%;              /* #2C486B graphite grid line */
+  --accent: 38 100% 56%;            /* #FFB020 signal amber */
+  --accent-foreground: 210 58% 9%;
+  --primary: 44 33% 93%;
+  --primary-foreground: 210 58% 9%;
+  --border: 207 44% 26%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-feature-settings: "ss01" on, "ss02" on;
+}
+
+.bg-blueprint-grid {
+  background-image:
+    linear-gradient(hsl(var(--line) / 0.4) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(var(--line) / 0.4) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+.bg-blueprint-grid-fine {
+  background-image:
+    linear-gradient(hsl(var(--line) / 0.22) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(var(--line) / 0.22) 1px, transparent 1px);
+  background-size: 11px 11px;
+}
+
+::selection {
+  background: hsl(var(--accent) / 0.35);
+  color: hsl(var(--foreground));
+}
+
+/* corner tick marks used on the schematic photo frame */
+.corner-tick {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-color: hsl(var(--accent));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
