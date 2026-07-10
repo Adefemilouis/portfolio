@@ -72,7 +72,7 @@ export function Hero() {
 
           <motion.div variants={item} className="mt-10 flex items-center gap-4">
             <a
-              href="https://github.com"
+              href="https://github.com/Adefemilouis"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground transition-colors hover:text-accent"

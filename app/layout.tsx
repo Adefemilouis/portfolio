@@ -21,9 +21,9 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Alex Chen — Software Engineer",
+  title: "Adekunle Adefemi — Software Engineer",
   description:
-    "Portfolio of Alex Chen, a software engineer building fast, dependable products end to end.",
+    "Portfolio of Adekunle Adefemi, a software engineer building fast, dependable products end to end.",
 };
 
 export default function RootLayout({

@@ -39,8 +39,8 @@ export function Contact() {
           className="flex flex-wrap items-center gap-4"
         >
           <Button asChild size="lg">
-            <a href="mailto:hello@alexchen.dev">
-              <Mail className="h-4 w-4" /> hello@alexchen.dev
+            <a href="adefemilouis@gmail.com">
+              <Mail className="h-4 w-4" /> adefemilouis@gmail.com
             </a>
           </Button>
           <Button asChild variant="outline" size="lg">
