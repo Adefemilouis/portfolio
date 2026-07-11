@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -26,12 +26,19 @@ export const metadata: Metadata = {
     "Portfolio of Adekunle Adefemi, a software engineer building fast, dependable products end to end.",
 };
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  viewportFit: "cover",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${display.variable} ${body.variable} ${mono.variable}`}>
-      <body className="font-body antialiased">{children}</body>
+      <body className="font-body min-h-screen overflow-x-hidden antialiased">{children}</body>
     </html>
   );
 }
