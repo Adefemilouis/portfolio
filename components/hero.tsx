@@ -54,9 +54,7 @@ export function Hero() {
             variants={item}
             className="mt-6 max-w-md font-body text-lg text-muted-foreground"
           >
-            Full-stack engineer specializing in resilient backend systems and
-            interfaces people actually enjoy using. Currently shipping at the
-            intersection of product and infrastructure.
+           Frontend engineer specializing in performant, accessible interfaces people actually enjoy using. Currently shipping at the intersection of product and design
           </motion.p>
 
           <motion.div variants={item} className="mt-10 flex flex-wrap items-center gap-4">
@@ -124,11 +122,11 @@ export function Hero() {
             <div className="relative aspect-[4/5] w-full overflow-hidden bg-blueprint-grid-fine">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/avatar.jfif"
+                src="/avatar.png"
                 alt="Portrait of Adekunle Adefemi, software engineer"
                 className="h-full w-full object-cover grayscale contrast-125"
                 onError={(e) => {
-                  (e.currentTarget as HTMLImageElement).src = "/avatar.svg";
+                  (e.currentTarget as HTMLImageElement).src = "/avatar.png";
                 }}
               />
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-panel/80 via-transparent to-transparent" />

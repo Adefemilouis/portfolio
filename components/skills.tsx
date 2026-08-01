@@ -6,16 +6,13 @@ import { Badge } from "@/components/ui/badge";
 const groups = [
   {
     label: "Languages",
-    items: ["TypeScript", "Go", "Python", "SQL"],
+    items: ["TypeScript", "JavaScript", "SaaS"],
   },
   {
     label: "Frontend",
     items: ["React", "Next.js", "Tailwind CSS", "Framer Motion"],
   },
-  {
-    label: "Backend & infra",
-    items: ["Node.js", "PostgreSQL", "Redis", "Docker", "AWS"],
-  },
+ 
   {
     label: "Practice",
     items: ["System design", "API design", "CI/CD", "Mentoring"],

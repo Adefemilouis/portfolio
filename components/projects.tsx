@@ -15,19 +15,19 @@ import { Badge } from "@/components/ui/badge";
 const projects = [
   {
     tag: "04",
-    title: "Ledger",
+    title: "Dashboard",
     description:
-      "A real-time reconciliation engine that processes millions of transactions a day with sub-second consistency checks.",
-    stack: ["Go", "PostgreSQL", "Kafka"],
-    href: "#",
+      "A real-time operations dashboard that surfaces critical metrics from millions of data points, refreshed in under a second.",
+    stack: ["Next.js", "Tailwind CSS", "Framer Motion"],
+    href: "https://next-dashboard-nu-silk.vercel.app/",
   },
   {
     tag: "05",
-    title: "Fieldnote",
+    title: "CarHub",
     description:
-      "An offline-first notes app for research teams, syncing seamlessly across spotty connections in the field.",
-    stack: ["Next.js", "SQLite", "CRDT"],
-    href: "#",
+      "A vehicle marketplace platform that helps thousands of users find, compare, and buy cars — with real-time inventory across dealers.",
+    stack: ["Next.js", "Tailwind CSS" ],
+    href: "https://car-hub-murex-five.vercel.app/",
   },
   {
     tag: "06",
